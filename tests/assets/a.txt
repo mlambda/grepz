@@ -1,0 +1,8 @@
+spam1
+spam2
+spam3
+spam4
+ham
+spam5
+spam6
+spam7

@@ -1,0 +1,35 @@
+[tool.poetry]
+authors = ["m09 <142691+m09@users.noreply.github.com>"]
+description = "Yet another grep clone"
+homepage = "https://github.com/mlambda/grepz"
+license = "Apache-2.0"
+name = "grepz"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.4.0"
+more-itertools = "^8.12.0"
+colorama = "^0.4.4"
+deal = "^4.19.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+flake8 = "^4.0.1"
+flake8-bugbear = "^22.1.11"
+flake8-docstrings = "^1.6.0"
+isort = "^5.10.1"
+mypy = "^0.931"
+pylint = "^2.12.2"
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+grepz = 'grepz.cli:main'
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
