@@ -4,17 +4,18 @@ description = "Yet another grep clone"
 homepage = "https://github.com/mlambda/grepz"
 license = "Apache-2.0"
 name = "grepz"
+packages = [{include = "grepz"}]
 readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-typer = "^0.4.0"
-more-itertools = "^8.12.0"
 colorama = "^0.4.4"
 deal = "^4.19.1"
+more-itertools = "^8.12.0"
+python = "^3.9"
+typer = "^0.4.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 black = "^22.1.0"
 flake8 = "^4.0.1"
 flake8-bugbear = "^22.1.11"
@@ -32,4 +33,4 @@ profile = "black"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
